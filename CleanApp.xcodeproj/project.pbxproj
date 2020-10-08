@@ -14,6 +14,8 @@
 		93485D50252D106200155B90 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; };
 		93485D51252D106200155B90 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93485D56252FA01400155B90 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D55252FA01400155B90 /* Model.swift */; };
+		93485D58252FA0F100155B90 /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D57252FA0F100155B90 /* RemoteAddAccount.swift */; };
+		93485D5A252FA15400155B90 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D59252FA15400155B90 /* HttpPostClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		93485D45252D102A00155B90 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		93485D47252D102A00155B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93485D55252FA01400155B90 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		93485D57252FA0F100155B90 /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		93485D59252FA15400155B90 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 		93485D39252D102A00155B90 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				93485D57252FA0F100155B90 /* RemoteAddAccount.swift */,
+				93485D59252FA15400155B90 /* HttpPostClient.swift */,
 				93485D3B252D102A00155B90 /* Info.plist */,
 			);
 			path = Data;
@@ -235,6 +241,7 @@
 					};
 					93485D37252D102A00155B90 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					93485D3F252D102A00155B90 = {
 						CreatedOnToolsVersion = 11.6;
@@ -300,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93485D5A252FA15400155B90 /* HttpPostClient.swift in Sources */,
+				93485D58252FA0F100155B90 /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +512,7 @@
 		93485D4A252D102A00155B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -521,6 +531,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -528,6 +539,7 @@
 		93485D4B252D102A00155B90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -553,6 +565,7 @@
 		93485D4D252D102A00155B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
@@ -572,6 +585,7 @@
 		93485D4E252D102A00155B90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
