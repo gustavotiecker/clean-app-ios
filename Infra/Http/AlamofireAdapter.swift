@@ -4,7 +4,6 @@
 //
 //  Created by Gustavo Tiecker on 12/02/21.
 //  Copyright © 2021 Gustavo Tiecker. All rights reserved.
-//
 
 import Foundation
 import Alamofire
