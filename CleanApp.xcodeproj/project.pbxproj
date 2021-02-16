@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9305D04825C99634008F0B6D /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04725C99634008F0B6D /* DomainError.swift */; };
 		9305D04E25C9B40A008F0B6D /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04D25C9B40A008F0B6D /* HttpError.swift */; };
+		933CC1D325DC0A7600AA4B7C /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */; };
+		933CC1DA25DC0AA700AA4B7C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; };
+		933CC1DB25DC0AA700AA4B7C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		933CC1E625DC0B2E00AA4B7C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC1E525DC0B2E00AA4B7C /* AlertView.swift */; };
 		93485D30252D0DB100155B90 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D2F252D0DB100155B90 /* AddAccount.swift */; };
 		93485D32252D0FB000155B90 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D31252D0FB000155B90 /* AccountModel.swift */; };
 		93485D41252D102A00155B90 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D38252D102A00155B90 /* Data.framework */; };
@@ -38,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		933CC1DC25DC0AA700AA4B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93485D0E252D0A0200155B90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93485D26252D0BD100155B90;
+			remoteInfo = Domain;
+		};
 		93485D42252D102A00155B90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93485D0E252D0A0200155B90 /* Project object */;
@@ -97,6 +108,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		933CC1DE25DC0AA700AA4B7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				933CC1DB25DC0AA700AA4B7C /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93485D54252D106200155B90 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +146,8 @@
 /* Begin PBXFileReference section */
 		9305D04725C99634008F0B6D /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		9305D04D25C9B40A008F0B6D /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		933CC1E525DC0B2E00AA4B7C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		93485D27252D0BD100155B90 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93485D2A252D0BD100155B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93485D2F252D0DB100155B90 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -209,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933CC1DA25DC0AA700AA4B7C /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +254,30 @@
 				9305D04725C99634008F0B6D /* DomainError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		933CC1E425DC0B2200AA4B7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				933CC1E525DC0B2E00AA4B7C /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		933CC1EC25DC0B4200AA4B7C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		933CC1F725DC0CF200AA4B7C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		93485D0D252D0A0200155B90 = {
@@ -407,6 +456,8 @@
 		9394711B25DAAC0D00AD3317 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				933CC1EC25DC0B4200AA4B7C /* Presenters */,
+				933CC1E425DC0B2200AA4B7C /* Views */,
 				9394711D25DAAC0D00AD3317 /* Info.plist */,
 			);
 			path = Presentation;
@@ -415,7 +466,7 @@
 		9394712625DAAC0D00AD3317 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */,
+				933CC1F725DC0CF200AA4B7C /* Presenters */,
 				9394712925DAAC0D00AD3317 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -580,10 +631,12 @@
 				9394711625DAAC0D00AD3317 /* Sources */,
 				9394711725DAAC0D00AD3317 /* Frameworks */,
 				9394711825DAAC0D00AD3317 /* Resources */,
+				933CC1DE25DC0AA700AA4B7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				933CC1DD25DC0AA700AA4B7C /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -641,6 +694,7 @@
 					};
 					9394711925DAAC0D00AD3317 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					9394712125DAAC0D00AD3317 = {
 						CreatedOnToolsVersion = 12.4;
@@ -799,6 +853,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933CC1D325DC0A7600AA4B7C /* SignUpPresenter.swift in Sources */,
+				933CC1E625DC0B2E00AA4B7C /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +869,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		933CC1DD25DC0AA700AA4B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93485D26252D0BD100155B90 /* Domain */;
+			targetProxy = 933CC1DC25DC0AA700AA4B7C /* PBXContainerItemProxy */;
+		};
 		93485D43252D102A00155B90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 93485D37252D102A00155B90 /* Data */;
@@ -1268,6 +1329,7 @@
 		9394712B25DAAC0D00AD3317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1288,6 +1350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1295,6 +1358,7 @@
 		9394712C25DAAC0D00AD3317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1322,6 +1386,7 @@
 		9394712D25DAAC0D00AD3317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1343,6 +1408,7 @@
 		9394712E25DAAC0D00AD3317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
