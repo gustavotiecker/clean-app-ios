@@ -37,6 +37,7 @@ public final class SignUpPresenter {
                 case .success(_):
                     break
                 }
+                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
             }
         }
     }
