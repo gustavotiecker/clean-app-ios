@@ -19,6 +19,11 @@
 		933CC21D25DEA51900AA4B7C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC21C25DEA51900AA4B7C /* LoadingView.swift */; };
 		933CC22525DED64100AA4B7C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC22425DED64100AA4B7C /* SignUpViewModel.swift */; };
 		933CC22C25DED6B400AA4B7C /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC22B25DED6B400AA4B7C /* SignUpMapper.swift */; };
+		933CC23F25DED8C100AA4B7C /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC23E25DED8C100AA4B7C /* AlertViewSpy.swift */; };
+		933CC24C25DED90800AA4B7C /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */; };
+		933CC25925DED95400AA4B7C /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC25825DED95400AA4B7C /* AddAccountSpy.swift */; };
+		933CC26525DEDF6900AA4B7C /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC26425DEDF6900AA4B7C /* LoadingViewSpy.swift */; };
+		933CC26D25DEE05F00AA4B7C /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC26C25DEE05F00AA4B7C /* TestFactories.swift */; };
 		93485D30252D0DB100155B90 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D2F252D0DB100155B90 /* AddAccount.swift */; };
 		93485D32252D0FB000155B90 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D31252D0FB000155B90 /* AccountModel.swift */; };
 		93485D41252D102A00155B90 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D38252D102A00155B90 /* Data.framework */; };
@@ -158,6 +163,11 @@
 		933CC21C25DEA51900AA4B7C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		933CC22425DED64100AA4B7C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		933CC22B25DED6B400AA4B7C /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
+		933CC23E25DED8C100AA4B7C /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
+		933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorSpy.swift; sourceTree = "<group>"; };
+		933CC25825DED95400AA4B7C /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
+		933CC26425DEDF6900AA4B7C /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
+		933CC26C25DEE05F00AA4B7C /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		93485D27252D0BD100155B90 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93485D2A252D0BD100155B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93485D2F252D0DB100155B90 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -286,7 +296,7 @@
 		933CC1F725DC0CF200AA4B7C /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */,
+				933CC23225DED85600AA4B7C /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -307,6 +317,47 @@
 				933CC22B25DED6B400AA4B7C /* SignUpMapper.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		933CC23225DED85600AA4B7C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		933CC23D25DED8AD00AA4B7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				933CC23E25DED8C100AA4B7C /* AlertViewSpy.swift */,
+				933CC26425DEDF6900AA4B7C /* LoadingViewSpy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		933CC24A25DED8EF00AA4B7C /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		933CC25725DED93B00AA4B7C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				933CC25825DED95400AA4B7C /* AddAccountSpy.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		933CC26B25DEE04700AA4B7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				933CC26C25DEE05F00AA4B7C /* TestFactories.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		93485D0D252D0A0200155B90 = {
@@ -496,6 +547,10 @@
 		9394712625DAAC0D00AD3317 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
+				933CC26B25DEE04700AA4B7C /* Helpers */,
+				933CC25725DED93B00AA4B7C /* UseCases */,
+				933CC24A25DED8EF00AA4B7C /* Validators */,
+				933CC23D25DED8AD00AA4B7C /* Views */,
 				933CC1F725DC0CF200AA4B7C /* Presenters */,
 				9394712925DAAC0D00AD3317 /* Info.plist */,
 			);
@@ -896,8 +951,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933CC26525DEDF6900AA4B7C /* LoadingViewSpy.swift in Sources */,
+				933CC25925DED95400AA4B7C /* AddAccountSpy.swift in Sources */,
+				933CC23F25DED8C100AA4B7C /* AlertViewSpy.swift in Sources */,
 				933CC20525DDF9EA00AA4B7C /* AccountModelFactory.swift in Sources */,
+				933CC24C25DED90800AA4B7C /* EmailValidatorSpy.swift in Sources */,
 				933CC21625DEA07F00AA4B7C /* TestExtensions.swift in Sources */,
+				933CC26D25DEE05F00AA4B7C /* TestFactories.swift in Sources */,
 				9394712825DAAC0D00AD3317 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
