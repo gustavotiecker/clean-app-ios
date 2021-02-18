@@ -16,6 +16,7 @@
 		933CC1FF25DC105600AA4B7C /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC1FE25DC105600AA4B7C /* EmailValidator.swift */; };
 		933CC20525DDF9EA00AA4B7C /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B1C25CB2A4C0096AA6A /* AccountModelFactory.swift */; };
 		933CC21625DEA07F00AA4B7C /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
+		933CC21D25DEA51900AA4B7C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC21C25DEA51900AA4B7C /* LoadingView.swift */; };
 		93485D30252D0DB100155B90 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D2F252D0DB100155B90 /* AddAccount.swift */; };
 		93485D32252D0FB000155B90 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93485D31252D0FB000155B90 /* AccountModel.swift */; };
 		93485D41252D102A00155B90 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D38252D102A00155B90 /* Data.framework */; };
@@ -152,6 +153,7 @@
 		933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		933CC1E525DC0B2E00AA4B7C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		933CC1FE25DC105600AA4B7C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		933CC21C25DEA51900AA4B7C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		93485D27252D0BD100155B90 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93485D2A252D0BD100155B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93485D2F252D0DB100155B90 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				933CC1E525DC0B2E00AA4B7C /* AlertView.swift */,
+				933CC21C25DEA51900AA4B7C /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -867,6 +870,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933CC1D325DC0A7600AA4B7C /* SignUpPresenter.swift in Sources */,
+				933CC21D25DEA51900AA4B7C /* LoadingView.swift in Sources */,
 				933CC1E625DC0B2E00AA4B7C /* AlertView.swift in Sources */,
 				933CC1FF25DC105600AA4B7C /* EmailValidator.swift in Sources */,
 			);
