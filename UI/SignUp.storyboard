@@ -20,6 +20,11 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wg6-4t-cg6">
                                 <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXN-c7-exa">
+                                <rect key="frame" x="184" y="351" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sb0-7G-nCa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,6 +35,7 @@
                     </view>
                     <connections>
                         <outlet property="loadingIndicator" destination="wg6-4t-cg6" id="CJh-b4-lAh"/>
+                        <outlet property="saveButton" destination="hXN-c7-exa" id="fOH-y0-l6g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8K-p4-5NZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
