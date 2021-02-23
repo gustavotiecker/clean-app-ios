@@ -417,9 +417,8 @@
 		933CC27E25DFF35C00AA4B7C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				938DD1BC25E589C30017487F /* Scenes */,
 				933CC28025DFF35C00AA4B7C /* Info.plist */,
-				933CC2C525DFFD9900AA4B7C /* SignUpViewController.swift */,
-				933CC2CE25DFFDDB00AA4B7C /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -427,7 +426,7 @@
 		933CC28925DFF35D00AA4B7C /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				933CC28A25DFF35D00AA4B7C /* SignUpViewControllerTests.swift */,
+				938DD1C325E589D10017487F /* Scenes */,
 				933CC28C25DFF35D00AA4B7C /* Info.plist */,
 			);
 			path = UITests;
@@ -608,6 +607,39 @@
 				9384E6FA25D6B1BA00289A55 /* UrlProtocolStub.swift */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		938DD1AE25E589870017487F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				933CC2C525DFFD9900AA4B7C /* SignUpViewController.swift */,
+				933CC2CE25DFFDDB00AA4B7C /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		938DD1BB25E589940017487F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				933CC28A25DFF35D00AA4B7C /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		938DD1BC25E589C30017487F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				938DD1AE25E589870017487F /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		938DD1C325E589D10017487F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				938DD1BB25E589940017487F /* SignUp */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		9394711B25DAAC0D00AD3317 /* Presentation */ = {
