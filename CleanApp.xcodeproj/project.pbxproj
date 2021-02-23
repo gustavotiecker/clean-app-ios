@@ -55,6 +55,7 @@
 		9384E6FB25D6B1BA00289A55 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384E6FA25D6B1BA00289A55 /* UrlProtocolStub.swift */; };
 		9384E70B25D6C20700289A55 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D38252D102A00155B90 /* Data.framework */; };
 		938DD1CC25E58AFC0017487F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DD1CB25E58AFC0017487F /* TestExtensions.swift */; };
+		938DD1DB25E5AAA90017487F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DD1DA25E5AAA90017487F /* UIViewControllerExtensions.swift */; };
 		9394712325DAAC0D00AD3317 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9394711A25DAAC0D00AD3317 /* Presentation.framework */; };
 		9394712825DAAC0D00AD3317 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */; };
 /* End PBXBuildFile section */
@@ -233,6 +234,7 @@
 		9384E6FA25D6B1BA00289A55 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		9384E70625D6C20700289A55 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938DD1CB25E58AFC0017487F /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		938DD1DA25E5AAA90017487F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		9394711A25DAAC0D00AD3317 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9394711D25DAAC0D00AD3317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9394712225DAAC0D00AD3317 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,6 +421,7 @@
 		933CC27E25DFF35C00AA4B7C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				938DD1D925E5AA890017487F /* Helpers */,
 				938DD1BC25E589C30017487F /* Scenes */,
 				933CC28025DFF35C00AA4B7C /* Info.plist */,
 			);
@@ -649,6 +652,14 @@
 			isa = PBXGroup;
 			children = (
 				938DD1CB25E58AFC0017487F /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		938DD1D925E5AA890017487F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				938DD1DA25E5AAA90017487F /* UIViewControllerExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1067,6 +1078,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938DD1DB25E5AAA90017487F /* UIViewControllerExtensions.swift in Sources */,
 				933CC2C625DFFD9900AA4B7C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
