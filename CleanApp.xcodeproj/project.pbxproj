@@ -61,7 +61,7 @@
 		935A617C25E697B900CEB96B /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 933CC27D25DFF35C00AA4B7C /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		935A617F25E697B900CEB96B /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; };
 		935A618025E697BA00CEB96B /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		935A618F25E6983200CEB96B /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A618E25E6983200CEB96B /* SignUpFactory.swift */; };
+		935A618F25E6983200CEB96B /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A618E25E6983200CEB96B /* ControllerFactory.swift */; };
 		93654B0125CB0FE70096AA6A /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0025CB0FE70096AA6A /* ExtensionHelpers.swift */; };
 		93654B0E25CB296D0096AA6A /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
 		93654B1225CB29BE0096AA6A /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B1125CB29BE0096AA6A /* TestFactories.swift */; };
@@ -82,6 +82,8 @@
 		938DD1E925E5ABD80017487F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DD1E825E5ABD80017487F /* Storyboarded.swift */; };
 		9394712325DAAC0D00AD3317 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9394711A25DAAC0D00AD3317 /* Presentation.framework */; };
 		9394712825DAAC0D00AD3317 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */; };
+		93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */; };
+		93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,7 +360,7 @@
 		935A613D25E6969200CEB96B /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935A614125E6969200CEB96B /* MainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITests.swift; sourceTree = "<group>"; };
 		935A614325E6969200CEB96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		935A618E25E6983200CEB96B /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		935A618E25E6983200CEB96B /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		93654B0025CB0FE70096AA6A /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		93654B0D25CB296D0096AA6A /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		93654B1125CB29BE0096AA6A /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
@@ -380,6 +382,8 @@
 		9394712225DAAC0D00AD3317 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		9394712925DAAC0D00AD3317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -768,6 +772,7 @@
 		935A611E25E6968D00CEB96B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93A8020D25E93ED100A1CF34 /* Composers */,
 				935A618D25E6982300CEB96B /* Factories */,
 				935A611F25E6968D00CEB96B /* AppDelegate.swift */,
 				935A612125E6968D00CEB96B /* SceneDelegate.swift */,
@@ -798,7 +803,8 @@
 		935A618D25E6982300CEB96B /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				935A618E25E6983200CEB96B /* SignUpFactory.swift */,
+				935A618E25E6983200CEB96B /* ControllerFactory.swift */,
+				93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -936,6 +942,14 @@
 				9394712925DAAC0D00AD3317 /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		93A8020D25E93ED100A1CF34 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1562,8 +1576,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */,
 				935A612025E6968D00CEB96B /* AppDelegate.swift in Sources */,
-				935A618F25E6983200CEB96B /* SignUpFactory.swift in Sources */,
+				93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */,
+				935A618F25E6983200CEB96B /* ControllerFactory.swift in Sources */,
 				935A612225E6968D00CEB96B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
