@@ -87,6 +87,7 @@
 		93A8022325E9551B00A1CF34 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */; };
 		93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC25825DED95400AA4B7C /* AddAccountSpy.swift */; };
 		93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
+		93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8024225E9830500A1CF34 /* WeekVarProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +389,7 @@
 		93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		93A8024225E9830500A1CF34 /* WeekVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekVarProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -776,6 +778,7 @@
 		935A611E25E6968D00CEB96B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93A8024125E982EC00A1CF34 /* Proxies */,
 				93A8020D25E93ED100A1CF34 /* Composers */,
 				935A618D25E6982300CEB96B /* Factories */,
 				935A611F25E6968D00CEB96B /* AppDelegate.swift */,
@@ -955,6 +958,14 @@
 				93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		93A8024125E982EC00A1CF34 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				93A8024225E9830500A1CF34 /* WeekVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1584,6 +1595,7 @@
 			files = (
 				93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */,
 				935A612025E6968D00CEB96B /* AppDelegate.swift in Sources */,
+				93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */,
 				93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */,
 				935A618F25E6983200CEB96B /* ControllerFactory.swift in Sources */,
 				935A612225E6968D00CEB96B /* SceneDelegate.swift in Sources */,
