@@ -87,6 +87,7 @@
 		93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC25825DED95400AA4B7C /* AddAccountSpy.swift */; };
 		93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
 		93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8024225E9830500A1CF34 /* WeekVarProxy.swift */; };
+		93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE96D025ED8E4300EF3FF6 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +389,9 @@
 		93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		93A8024225E9830500A1CF34 /* WeekVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekVarProxy.swift; sourceTree = "<group>"; };
+		93CE96C525ED8BCA00EF3FF6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		93CE96D025ED8E4300EF3FF6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -776,6 +780,7 @@
 		935A611E25E6968D00CEB96B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93CE96C425ED8BB800EF3FF6 /* Env */,
 				93A8024125E982EC00A1CF34 /* Proxies */,
 				93A8020D25E93ED100A1CF34 /* Composers */,
 				935A618D25E6982300CEB96B /* Factories */,
@@ -791,8 +796,8 @@
 		935A613525E6969200CEB96B /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
-				935A613825E6969200CEB96B /* Info.plist */,
 				93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */,
+				935A613825E6969200CEB96B /* Info.plist */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -963,6 +968,16 @@
 				93A8024225E9830500A1CF34 /* WeekVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		93CE96C425ED8BB800EF3FF6 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				93CE96D025ED8E4300EF3FF6 /* Environment.swift */,
+				93CE96C525ED8BCA00EF3FF6 /* Debug.xcconfig */,
+				93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1591,6 +1606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */,
+				93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */,
 				935A612025E6968D00CEB96B /* AppDelegate.swift in Sources */,
 				93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */,
 				93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */,
@@ -2276,6 +2292,7 @@
 		};
 		935A614525E6969200CEB96B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CE96C525ED8BCA00EF3FF6 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2297,6 +2314,7 @@
 		};
 		935A614625E6969200CEB96B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//  CleanApp
+//
+//  Created by Gustavo Tiecker on 01/03/21.
+//  Copyright © 2021 Gustavo Tiecker. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = https:/$()/fordevs.herokuapp.com/api/
