@@ -83,7 +83,7 @@
 		9394712825DAAC0D00AD3317 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */; };
 		93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */; };
 		93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */; };
-		93A8022325E9551B00A1CF34 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */; };
+		93A8022325E9551B00A1CF34 /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */; };
 		93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC25825DED95400AA4B7C /* AddAccountSpy.swift */; };
 		93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
 		93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8024225E9830500A1CF34 /* WeekVarProxy.swift */; };
@@ -387,7 +387,7 @@
 		9394712925DAAC0D00AD3317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
-		93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
 		93A8024225E9830500A1CF34 /* WeekVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekVarProxy.swift; sourceTree = "<group>"; };
 		93CE96C525ED8BCA00EF3FF6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -527,6 +527,14 @@
 				9305D04725C99634008F0B6D /* DomainError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		930707DE25EEC8120012391D /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		933CC1E425DC0B2200AA4B7C /* Views */ = {
@@ -796,7 +804,7 @@
 		935A613525E6969200CEB96B /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
-				93A8022225E9551B00A1CF34 /* SignUpIntegrationTests.swift */,
+				930707DE25EEC8120012391D /* Composers */,
 				935A613825E6969200CEB96B /* Info.plist */,
 			);
 			path = MainTests;
@@ -1620,7 +1628,7 @@
 			files = (
 				93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */,
 				93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */,
-				93A8022325E9551B00A1CF34 /* SignUpIntegrationTests.swift in Sources */,
+				93A8022325E9551B00A1CF34 /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
