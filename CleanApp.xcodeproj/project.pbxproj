@@ -10,6 +10,7 @@
 		9305D04825C99634008F0B6D /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04725C99634008F0B6D /* DomainError.swift */; };
 		9305D04E25C9B40A008F0B6D /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04D25C9B40A008F0B6D /* HttpError.swift */; };
 		930707F125EECC5F0012391D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC26C25DEE05F00AA4B7C /* TestFactories.swift */; };
+		930707FD25EED2380012391D /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930707FC25EED2380012391D /* MainQueueDispatchDecorator.swift */; };
 		933CC1D325DC0A7600AA4B7C /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */; };
 		933CC1DA25DC0AA700AA4B7C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; };
 		933CC1DB25DC0AA700AA4B7C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -318,6 +319,7 @@
 /* Begin PBXFileReference section */
 		9305D04725C99634008F0B6D /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		9305D04D25C9B40A008F0B6D /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		930707FC25EED2380012391D /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		933CC1E525DC0B2E00AA4B7C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		933CC1FE25DC105600AA4B7C /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -536,6 +538,14 @@
 				93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		930707FB25EED2200012391D /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				930707FC25EED2380012391D /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		933CC1E425DC0B2200AA4B7C /* Views */ = {
@@ -789,6 +799,7 @@
 		935A611E25E6968D00CEB96B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				930707FB25EED2200012391D /* Decorators */,
 				93CE96C425ED8BB800EF3FF6 /* Env */,
 				93A8024125E982EC00A1CF34 /* Proxies */,
 				93A8020D25E93ED100A1CF34 /* Composers */,
@@ -1615,6 +1626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */,
+				930707FD25EED2380012391D /* MainQueueDispatchDecorator.swift in Sources */,
 				93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */,
 				935A612025E6968D00CEB96B /* AppDelegate.swift in Sources */,
 				93A8024325E9830500A1CF34 /* WeekVarProxy.swift in Sources */,
