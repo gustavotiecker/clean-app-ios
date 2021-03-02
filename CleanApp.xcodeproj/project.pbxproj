@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9305D04825C99634008F0B6D /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04725C99634008F0B6D /* DomainError.swift */; };
 		9305D04E25C9B40A008F0B6D /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305D04D25C9B40A008F0B6D /* HttpError.swift */; };
+		930707F125EECC5F0012391D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC26C25DEE05F00AA4B7C /* TestFactories.swift */; };
 		933CC1D325DC0A7600AA4B7C /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC1D225DC0A7600AA4B7C /* SignUpPresenter.swift */; };
 		933CC1DA25DC0AA700AA4B7C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; };
 		933CC1DB25DC0AA700AA4B7C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93485D27252D0BD100155B90 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -1628,6 +1629,7 @@
 			files = (
 				93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */,
 				93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */,
+				930707F125EECC5F0012391D /* TestFactories.swift in Sources */,
 				93A8022325E9551B00A1CF34 /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
