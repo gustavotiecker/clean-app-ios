@@ -9,21 +9,28 @@
 import Foundation
 import Domain
 
+public protocol Validation {
+    func validate(data: [String : Any]?) -> String?
+}
+
 public final class SignUpPresenter {
     
     private let alertView: AlertView
     private let emailValidator: EmailValidator
     private let addAccount: AddAccount
     private let loadingView: LoadingView
+    private let validation: Validation
     
-    public init(alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount, loadingView: LoadingView){
+    public init(alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount, loadingView: LoadingView, validation: Validation){
         self.alertView = alertView
         self.emailValidator = emailValidator
         self.addAccount = addAccount
         self.loadingView = loadingView
+        self.validation = validation
     }
     
     public func signUp(viewModel: SignUpViewModel) {
+        _ = validation.validate(data: viewModel.toJson())
         if let message = validate(viewModel: viewModel) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         } else {

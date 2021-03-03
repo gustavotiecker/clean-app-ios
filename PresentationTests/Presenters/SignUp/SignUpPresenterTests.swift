@@ -160,13 +160,31 @@ class SignUpPresenterTests: XCTestCase {
         addAccountSpy.completeWithAccount(makeAccountModel())
         wait(for: [exp], timeout: 1)
     }
+    
+    func test_signUp_should_call_validation_with_correct_data() {
+        let validationSpy = ValidationSpy()
+        let sut = makeSut(validation: validationSpy)
+        let viewModel = makeSignUpViewModel()
+        sut.signUp(viewModel: viewModel)
+        XCTAssertTrue(NSDictionary(dictionary: validationSpy.data!).isEqual(to: viewModel.toJson()!))
+    }
 }
 
 extension SignUpPresenterTests {
     
-    func makeSut(alertView: AlertViewSpy = AlertViewSpy(), emailValidator: EmailValidatorSpy = EmailValidatorSpy(), addAccount: AddAccountSpy = AddAccountSpy(), loadingView: LoadingViewSpy = LoadingViewSpy(), file: StaticString = #filePath, line: UInt = #line) -> SignUpPresenter {
-        let sut = SignUpPresenter(alertView: alertView, emailValidator: emailValidator, addAccount: addAccount, loadingView: loadingView)
+    func makeSut(alertView: AlertViewSpy = AlertViewSpy(), emailValidator: EmailValidatorSpy = EmailValidatorSpy(), addAccount: AddAccountSpy = AddAccountSpy(), loadingView: LoadingViewSpy = LoadingViewSpy(), validation: ValidationSpy = ValidationSpy(), file: StaticString = #filePath, line: UInt = #line) -> SignUpPresenter {
+        let sut = SignUpPresenter(alertView: alertView, emailValidator: emailValidator, addAccount: addAccount, loadingView: loadingView, validation: validation)
         checkMemoryLeak(for: sut, file: file, line: line)
         return sut
+    }
+}
+
+class ValidationSpy: Validation {
+    
+    var data: [String : Any]?
+    
+    func validate(data: [String : Any]?) -> String? {
+        self.data = data
+        return nil
     }
 }

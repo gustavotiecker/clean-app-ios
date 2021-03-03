@@ -32,17 +32,17 @@
 		<key>Main.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
 		</dict>
 		<key>Presentation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>7</integer>
 		</dict>
 		<key>UI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Validation.xcscheme_^#shared#^_</key>
 		<dict>
@@ -67,6 +67,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>935A611C25E6968D00CEB96B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>935A613125E6969200CEB96B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>935A613C25E6969200CEB96B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>937F010625D2168A0079C28C</key>
 		<dict>
 			<key>primary</key>
@@ -78,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>9384E70525D6C20700289A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9394711925DAAC0D00AD3317</key>
 		<dict>
 			<key>primary</key>
 			<true/>
