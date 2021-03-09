@@ -9,10 +9,6 @@
 import Foundation
 import Domain
 
-public protocol Validation {
-    func validate(data: [String : Any]?) -> String?
-}
-
 public final class SignUpPresenter {
     
     private let alertView: AlertView
