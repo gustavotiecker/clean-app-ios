@@ -27,7 +27,7 @@ class SignUpPresenterTests: XCTestCase {
         let exp = expectation(description: "waiting")
         
         alertViewSpy.observe { viewModel in
-            XCTAssertEqual(viewModel, makeErrorAlertViewModel(message: "Algo inesperado aconteceu, tente novamente em alguns instantes"))
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Erro", message: "Algo inesperado aconteceu, tente novamente em alguns instantes"))
             exp.fulfill()
         }
         sut.signUp(viewModel: makeSignUpViewModel())
@@ -64,7 +64,7 @@ class SignUpPresenterTests: XCTestCase {
         let exp = expectation(description: "waiting")
         
         alertViewSpy.observe { viewModel in
-            XCTAssertEqual(viewModel, makeSuccessAlertViewModel(message: "Conta criada com sucesso"))
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Sucesso", message: "Conta criada com sucesso"))
             exp.fulfill()
         }
         sut.signUp(viewModel: makeSignUpViewModel())
