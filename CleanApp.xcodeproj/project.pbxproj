@@ -97,6 +97,8 @@
 		93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE96D025ED8E4300EF3FF6 /* Environment.swift */; };
 		93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */; };
 		93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
+		93F1A3F62601989800EE1574 /* CompareFieldsValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A3F52601989800EE1574 /* CompareFieldsValidationTests.swift */; };
+		93F1A401260198FB00EE1574 /* CompareFieldsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A400260198FB00EE1574 /* CompareFieldsValidation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -414,6 +416,8 @@
 		93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		93CE96D025ED8E4300EF3FF6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
+		93F1A3F52601989800EE1574 /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
+		93F1A400260198FB00EE1574 /* CompareFieldsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -811,8 +815,8 @@
 		935A60D325E68BD000CEB96B /* ValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				936F858D25FC41D300B70006 /* RequiredFieldValidationTests.swift */,
-				933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */,
+				93F1A3E22601985F00EE1574 /* Validators */,
+				93F1A3D82601985700EE1574 /* Protocols */,
 				935A60D625E68BD000CEB96B /* Info.plist */,
 			);
 			path = ValidationTests;
@@ -1052,6 +1056,24 @@
 			isa = PBXGroup;
 			children = (
 				93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */,
+				93F1A400260198FB00EE1574 /* CompareFieldsValidation.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		93F1A3D82601985700EE1574 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		93F1A3E22601985F00EE1574 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				936F858D25FC41D300B70006 /* RequiredFieldValidationTests.swift */,
+				93F1A3F52601989800EE1574 /* CompareFieldsValidationTests.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -1666,6 +1688,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F1A401260198FB00EE1574 /* CompareFieldsValidation.swift in Sources */,
 				93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */,
 				93AFF90025F8070E00D338BA /* EmailValidator.swift in Sources */,
 			);
@@ -1678,6 +1701,7 @@
 				936F858E25FC41D300B70006 /* RequiredFieldValidationTests.swift in Sources */,
 				93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */,
 				93AFF90A25F8073900D338BA /* EmailValidatorSpy.swift in Sources */,
+				93F1A3F62601989800EE1574 /* CompareFieldsValidationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
