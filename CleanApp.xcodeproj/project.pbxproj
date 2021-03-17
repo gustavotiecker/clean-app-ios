@@ -95,6 +95,8 @@
 		93AFF94725F8083000D338BA /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; };
 		93AFF94825F8083000D338BA /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE96D025ED8E4300EF3FF6 /* Environment.swift */; };
+		93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */; };
+		93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -411,6 +413,7 @@
 		93CE96C525ED8BCA00EF3FF6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		93CE96D025ED8E4300EF3FF6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -798,7 +801,8 @@
 		935A60C825E68BCF00CEB96B /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				933CC1FE25DC105600AA4B7C /* EmailValidator.swift */,
+				93F1A3C22601966F00EE1574 /* Validators */,
+				93F1A3C12601965700EE1574 /* Protocols */,
 				935A60CA25E68BCF00CEB96B /* Info.plist */,
 			);
 			path = Validation;
@@ -1034,6 +1038,22 @@
 				93CE96C625ED8C3D00EF3FF6 /* Release.xcconfig */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		93F1A3C12601965700EE1574 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				933CC1FE25DC105600AA4B7C /* EmailValidator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		93F1A3C22601966F00EE1574 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1646,6 +1666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */,
 				93AFF90025F8070E00D338BA /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1655,6 +1676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936F858E25FC41D300B70006 /* RequiredFieldValidationTests.swift in Sources */,
+				93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */,
 				93AFF90A25F8073900D338BA /* EmailValidatorSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
