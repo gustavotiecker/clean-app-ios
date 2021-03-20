@@ -82,6 +82,9 @@
 		9394712825DAAC0D00AD3317 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9394712725DAAC0D00AD3317 /* SignUpPresenterTests.swift */; };
 		93948DBD2602B19100DC978D /* EmailValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93948DBC2602B19100DC978D /* EmailValidationTests.swift */; };
 		93948DC82602B6BC00DC978D /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93948DC72602B6BC00DC978D /* EmailValidation.swift */; };
+		9399E353260592970073FBD9 /* ValidationCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399E352260592970073FBD9 /* ValidationCompositeTests.swift */; };
+		9399E35E260598160073FBD9 /* ValidationComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399E35D260598160073FBD9 /* ValidationComposite.swift */; };
+		9399E36A2605986C0073FBD9 /* ValidationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399E3692605986C0073FBD9 /* ValidationSpy.swift */; };
 		93A8020325E93DD100A1CF34 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */; };
 		93A8020F25E93EEC00A1CF34 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */; };
 		93A8022325E9551B00A1CF34 /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */; };
@@ -410,6 +413,9 @@
 		9394712925DAAC0D00AD3317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93948DBC2602B19100DC978D /* EmailValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationTests.swift; sourceTree = "<group>"; };
 		93948DC72602B6BC00DC978D /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		9399E352260592970073FBD9 /* ValidationCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationCompositeTests.swift; sourceTree = "<group>"; };
+		9399E35D260598160073FBD9 /* ValidationComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationComposite.swift; sourceTree = "<group>"; };
+		9399E3692605986C0073FBD9 /* ValidationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSpy.swift; sourceTree = "<group>"; };
 		93A8020225E93DD100A1CF34 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		93A8020E25E93EEC00A1CF34 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		93A8022225E9551B00A1CF34 /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
@@ -1062,6 +1068,7 @@
 				93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */,
 				93F1A400260198FB00EE1574 /* CompareFieldsValidation.swift */,
 				93948DC72602B6BC00DC978D /* EmailValidation.swift */,
+				9399E35D260598160073FBD9 /* ValidationComposite.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -1070,6 +1077,7 @@
 			isa = PBXGroup;
 			children = (
 				933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */,
+				9399E3692605986C0073FBD9 /* ValidationSpy.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1080,6 +1088,7 @@
 				936F858D25FC41D300B70006 /* RequiredFieldValidationTests.swift */,
 				93F1A3F52601989800EE1574 /* CompareFieldsValidationTests.swift */,
 				93948DBC2602B19100DC978D /* EmailValidationTests.swift */,
+				9399E352260592970073FBD9 /* ValidationCompositeTests.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -1696,6 +1705,7 @@
 			files = (
 				93F1A401260198FB00EE1574 /* CompareFieldsValidation.swift in Sources */,
 				93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */,
+				9399E35E260598160073FBD9 /* ValidationComposite.swift in Sources */,
 				93AFF90025F8070E00D338BA /* EmailValidator.swift in Sources */,
 				93948DC82602B6BC00DC978D /* EmailValidation.swift in Sources */,
 			);
@@ -1707,6 +1717,8 @@
 			files = (
 				936F858E25FC41D300B70006 /* RequiredFieldValidationTests.swift in Sources */,
 				93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */,
+				9399E353260592970073FBD9 /* ValidationCompositeTests.swift in Sources */,
+				9399E36A2605986C0073FBD9 /* ValidationSpy.swift in Sources */,
 				93948DBD2602B19100DC978D /* EmailValidationTests.swift in Sources */,
 				93AFF90A25F8073900D338BA /* EmailValidatorSpy.swift in Sources */,
 				93F1A3F62601989800EE1574 /* CompareFieldsValidationTests.swift in Sources */,
