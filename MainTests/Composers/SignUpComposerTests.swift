@@ -27,7 +27,7 @@ class SignUpComposerTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
     
-    func test_signUpCompose_with_correct_valiadtion() {
+    func test_signUpCompose_with_correct_validations() {
         let validations = SignUpComposer.makeValidations()
         XCTAssertEqual(validations[0] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "name", fieldLabel: "Nome"))
     }
