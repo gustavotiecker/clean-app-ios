@@ -11,6 +11,7 @@ import UI
 import Presentation
 import Validation
 import Domain
+import Infra
 
 public final class SignUpComposer {
     
@@ -26,7 +27,12 @@ public final class SignUpComposer {
     
     public static func makeValidations() -> [Validation] {
         return [
-            RequiredFieldValidation(fieldName: "name", fieldLabel: "Nome")
+            RequiredFieldValidation(fieldName: "name", fieldLabel: "Nome"),
+            RequiredFieldValidation(fieldName: "email", fieldLabel: "Email"),
+            EmailValidation(fieldName: "email", fieldLabel: "Email", emailValidator: EmailValidatorAdapter()),
+            RequiredFieldValidation(fieldName: "password", fieldLabel: "Senha"),
+            RequiredFieldValidation(fieldName: "passwordConfirmation", fieldLabel: "Confirmar Senha"),
+            CompareFieldsValidation(fieldName: "password", fieldNameToCompare: "passwordConfirmation", fieldLabel: "Confirmar Senha")
         ]
     }
 }

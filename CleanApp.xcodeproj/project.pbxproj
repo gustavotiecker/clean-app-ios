@@ -100,6 +100,7 @@
 		93AFF94725F8083000D338BA /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; };
 		93AFF94825F8083000D338BA /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 935A60C725E68BCF00CEB96B /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93CE96D125ED8E4300EF3FF6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE96D025ED8E4300EF3FF6 /* Environment.swift */; };
+		93DAB4182649DB7400B21F56 /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CC24B25DED90800AA4B7C /* EmailValidatorSpy.swift */; };
 		93F1A3C42601968300EE1574 /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A3C32601968300EE1574 /* RequiredFieldValidation.swift */; };
 		93F1A3CE2601975B00EE1574 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93654B0D25CB296D0096AA6A /* TestExtensions.swift */; };
 		93F1A3F62601989800EE1574 /* CompareFieldsValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F1A3F52601989800EE1574 /* CompareFieldsValidationTests.swift */; };
@@ -1745,6 +1746,7 @@
 			files = (
 				93A8022D25E955A800A1CF34 /* AddAccountSpy.swift in Sources */,
 				93A8023725E9560900A1CF34 /* TestExtensions.swift in Sources */,
+				93DAB4182649DB7400B21F56 /* EmailValidatorSpy.swift in Sources */,
 				930707F125EECC5F0012391D /* TestFactories.swift in Sources */,
 				93A8022325E9551B00A1CF34 /* SignUpComposerTests.swift in Sources */,
 			);
