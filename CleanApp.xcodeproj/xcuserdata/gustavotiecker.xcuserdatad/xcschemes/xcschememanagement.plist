@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>UseCasesIntegrationTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Validation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -88,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>935A613C25E6969200CEB96B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93623126265352000045F8F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
